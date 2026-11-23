@@ -1,0 +1,31 @@
+# machine-monitor — Monitoramento de Máquinas Industriais
+
+API REST (Java 25 + Spring Boot 4) da CloudTech Solutions para cadastrar máquinas e registrar produção e consumo.
+
+**URL pública:** https://SEU-DOMINIO.up.railway.app
+
+## Executar
+```bash
+./mvnw spring-boot:run   # API em http://localhost:8080
+./mvnw clean test        # testes JUnit 5 + MockMvc
+```
+
+## Endpoints
+| Método | Rota | Descrição | Respostas |
+|---|---|---|---|
+| GET | / | Página inicial | 200 |
+| GET | /status | Status da aplicação | 200 |
+| GET | /versao | Versão | 200 |
+| GET | /maquinas | Lista máquinas | 200 |
+| GET | /maquinas/{id} | Consulta máquina | 200/404 |
+| POST | /maquinas/cadastro | Cadastra máquina | 201/400 |
+| PUT | /maquinas/{id} | Atualiza máquina | 200/400/404 |
+| DELETE | /maquinas/{id} | Exclui máquina | 204/404 |
+| GET | /maquinas/{id}/historico | Histórico de produção e consumo | 200/404 |
+| GET | /producao | Lista produção (?maquinaId=) | 200 |
+| POST | /producao | Registra produção | 201/400/404 |
+| PUT | /producao/{id} | Atualiza produção | 200/400/404 |
+| DELETE | /producao/{id} | Exclui produção | 204/404 |
+
+## Fluxo DevOps
+feature/* → PR para develop → PR para main → GitHub Actions (build, testes, .jar) → Railway (deploy automático da main)
