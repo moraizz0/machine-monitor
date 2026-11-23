@@ -1,4 +1,4 @@
-package main.java.com.cloudtech.machine_monitor.controller;
+package com.cloudtech.machine_monitor.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cloudtech.machinemonitor.models.Producao;
-import com.cloudtech.machinemonitor.repository.MaquinaRepository;
-import com.cloudtech.machinemonitor.repository.ProducaoRepository;
+import com.cloudtech.machine_monitor.models.Producao;
+import com.cloudtech.machine_monitor.repository.MaquinaRepository;
+import com.cloudtech.machine_monitor.repository.ProducaoRepository;
 
 @RestController
 @RequestMapping("/producao")

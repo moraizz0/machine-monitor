@@ -1,4 +1,4 @@
-package main.java.com.cloudtech.machine_monitor.controller;
+package com.cloudtech.machine_monitor.controller;
 
 import java.util.LinkedHashMap;
 import java.util.List;

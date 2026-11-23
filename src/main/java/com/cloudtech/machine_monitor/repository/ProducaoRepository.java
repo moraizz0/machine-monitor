@@ -1,4 +1,4 @@
-package main.java.com.cloudtech.machine_monitor.repository;
+package com.cloudtech.machine_monitor.repository;
 
 import java.nio.file.Path;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
-import com.cloudtech.machinemonitor.models.Producao;
+import com.cloudtech.machine_monitor.models.Producao;
 
 import tools.jackson.core.type.TypeReference;
 

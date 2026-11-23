@@ -1,4 +1,4 @@
-package main.java.com.cloudtech.machine_monitor.repository;
+package com.cloudtech.machine_monitor.repository;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;

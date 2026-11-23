@@ -1,4 +1,4 @@
-package main.java.com.cloudtech.machine_monitor.models;
+package com.cloudtech.machine_monitor.models;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
